@@ -1,13 +1,117 @@
+html {
+	scroll-behavior: smooth;
+}
+
+.fix-top {
+	position: relative;
+	top: -120px;
+}
+
+.half-top {
+	position: relative;
+	top: -50px;
+}
+
+
+.sticky-top {
+	background: rgba(255,255,255,0.7);
+	color: rgba(0,0,0,.5);
+	height: 80px;
+}
+
+.ws-text {
+	font-family: Neucha;
+	font-size: 38px !important;
+	color: #0056b3 !important;
+	margin-right: 30px;
+	text-decoration: none;
+	letter-spacing: 3px;
+}
+
+.ws-text:hover {
+	text-decoration: none;
+}
+
+.ws-text span {
+	color: green;
+}
+
+#navbarText ul li a {
+	font-family: Assistant;
+	font-size: 18px;
+}
+
+#navbarText ul li a {
+	animation-duration: 1200ms;
+	animation-delay: 1s;
+	margin-right: 20px;
+}
+
+#codeberry {
+	position: absolute;
+	bottom: 15px;
+	right: 15px;
+	height: 65px;
+	width: 65px;
+}
+
+#codeberry:hover {
+	cursor: pointer;
+}
+
+#fb-logo {
+	height: 31px;
+	width: 32px;
+}
+
+#insta-logo {
+	height: 30px;
+	width: 30px;
+	margin-left: 15px;
+}
+
+* {
+	transition: font-size 500ms, top 500ms, height 500ms, width 500ms;
+}
+
+div {
+	transition: height 500ms ease, margin 500ms ease, padding 500ms ease;
+}
+
+/*.mobile-nav {
+	float: right;
+    padding: 15px;
+    width: 200px;
+    text-align: right;
+    background-color: rgba(255,255,255,0.7);
+}*/
+
+
+/* 	home page stuff yo! */
+
+
 #home-bg1 {
 	background-image: url('images/bg1.jpg');
 	background-size: cover;
 	background-position: center;
+	background-attachment: fixed;
 }
 
 #home-bg1 button {
-	width: 200px;
+	width: 370px;
 	font-family: Assistant;
-	font-size: 20px;
+	font-size: 19px;
+	background-color: rgba(255, 255, 255, 0.6);
+	border: 2px solid #003268;
+	color: #0056b2;
+	display: none;
+	transition: background-color 1s ease, border-color 1s ease;
+}
+
+#home-bg1 button:hover {
+	border-color: transparent;
+	background-color: #fafafa;
+	cursor: pointer;
 }
 
 #home-strip {
@@ -22,44 +126,752 @@
 	font-size: 82px;
 	width: 100%;
 	text-align: center;
-	line-height: 120px;
+	line-height: 100px;
 	margin: 0;
 	font-family: PT Serif;
-}
-
-.sticky-top {
-	background: rgba(255,255,255,0.7);
-}
-
-.sticky-top a {
-	font-family: Neucha;
-	font-size: 38px;
+	color: #003268;
+	visibility: hidden;
 }
 
 #lhr {
 	position: absolute;
-	width: 25%;
+	width: 0%;
 	border: 1px solid #212529;
 	left: 0;
 	margin: 0;
+	border-color: #003268 !important;
 }
 
 #rhr {
 	position: absolute;
-	width: 25%;
+	width: 0%;
 	border: 1px solid #212529;
 	right: 0;
 	margin: 0;
+	border-color: #003268 !important;
 }
 
-#home-bg2 {
+#home-inner2 {
+	background-image: linear-gradient(to right top, #4cb5a6, #45b69d, #43b691, #45b684, #4cb576);
 }
 
-#home-bg2 div {
-	background-color: #1988f9;
+
+#home-bg2 div h2 {
+	display: inline;
+	font-size: 58px;
+	color: #fafafa;
+	font-family: Caveat Brush;
 }
 
-.fix-top {
+#home-bg2 div span {
+	display: inline;
+	font-size: 28px;
+	font-family: Neucha;
+	color: #fafafa;
+}
+
+#home-bg2 div p {
+	font-size: 20px;
+	font-family: Assistant;
+	font-weight: normal;
+	color: #eae7e7;
+	line-height: 1.7;
+}
+
+#home-bg2 div hr {
+	width: 100%;
+	color: ;
+}
+
+#home-bg2 div button {
+	width: 200px;
+	height: 60px;
+	float: right;
+	margin-top: 15px;
+	font-family: Assistant;
+	font-size: 20px;
+}
+
+#home-container1 {
+	width: 100%;
+	background-color: transparent !important;
+}
+
+/*#home-bg3 {
+	background-image: url('images/1.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}*/
+
+#home-row {
+	width: 100%;
+	display: none;
+}
+
+#home-row > * {
+	padding: 0 4%;
+	height: 100%;
+}
+
+
+#home-row h1 {
+	font-family: PT Serif;
+	font-size: 45px;
+	margin: 0;
+	color: #003268;
+}
+
+#home-row p { 
+	font-family: Assistant;
+	font-weight: normal;
+	font-size: 20px;
+	text-align: center;
+	font-color: #7a7a7a;
+}
+
+#home-row hr {
+	width: 100%;
+}
+
+
+
+/*		about styles 		*/
+
+#about-bg1 {
+	background-image: url('images/bg4.png');
+	background-size: cover;
+	position: absolute;
+	top: 0;
+}
+
+#about-bg1 h1 {
+	position: absolute;
+	bottom: 10px;
+	right: 30px;
+	font-family: Assistant;
+	font-weight: bold;
+	font-size: 102px;
+	color: #fafafa;
+}
+
+#about-bg2 {
+	height: 500px;
+	width: 100%;
+	margin-top: 30px;
+}
+
+.dummy {
+	height: 250px;
+}
+
+#about-inner2 img {
+	float: left;
+	margin-right: 30px;
+	border-radius: 5px;
+}
+
+
+#about-inner2 h1 {
+	font-family: Assistant;
+	font-weight: bold;
+	margin: 0;
+	font-size: 58px;
+	color: #004896;
+}
+
+#about-inner2 hr {
+	width: 50%;
+    float: left;
+    margin: 0;
+}
+
+#about-inner2 p {
+	font-size: 20px;
+	font-family: Assistant;
+}
+
+#about-inner3 img {
+	float: right;
+	margin-left: 30px;
+	border-radius: 5px;
+}
+
+#about-inner3 h1 {
+	font-family: Assistant;
+	font-weight: bold;
+	margin: 0;
+	font-size: 58px;
+	text-align: right;
+}
+
+#about-inner3 hr {
+	width: 50%;
+    float: right;
+    margin: 0;
+}
+
+#about-inner3 p {
+	font-size: 20px;
+	font-family: Assistant;
+	text-align: right;
+}
+
+#about-bg3 {
+	height: 1110px;
+	margin-bottom: 90px;
+}
+	
+#about-inner4 button {
+	width: 300px;
+	height: 70px;
+	font-size: 21px !important;
+	background-color: rgba(255,255,255,0.7);
+	border: 2px solid #0e72d7;
+	float:right;
+	font-family: Assistant;
+	color: #054c98;
+	transition: background-color 500ms, color 500ms;
+}
+
+#about-inner4 button:hover {
+	background-color: #0e72d7;
+	color: #fafafa;
+	cursor: pointer;
+}
+
+#about-inner4 {
+	height: 90%;
+	width: 90%;
+	background-image: linear-gradient(to right top, #4cb5a6, #45b69d, #43b691, #45b684, #4cb576);
+}
+
+#about-inner4 h1 {
+	font-family: Assistant;
+	font-weight: bold;
+	color: #fafafa;
+	font-size: 60px;
+	margin: 0;
+}
+
+#about-inner4 h4 {
+	width: 92%;
+}
+
+#team-row {
+	margin-top: 20px;
+}
+
+#team-row h2 {
+	font-family: Assistant;
+	font-weight: bold;
+	font-size: 32px;
+	color: #fafafa;
+}
+
+#team-row p {
+	font-family: Assistant;
+	font-size: 16px;
+	color: #fafafa;
+}
+
+.team-pic {
+	height: 135px;
+	margin-right: 15px;
+}
+
+#team-row .row {
+	-ms-align-items: center;
+	align-items: center;
+	margin-bottom: 35px;
+}
+
+#about-inner2 button {
+	width: 200px;
+	height: 60px;
+	font-size: 17px;
+	border: transparent;
+	background-color: #0e72d7;
+	float: right;
+	color: #fafafa;
+	transition: background-color 500ms, color 500ms;
+}
+
+#about-inner2 button:hover {
+	background-color: #4ab67b;
+	color: #212121;
+	cursor: pointer;
+}
+
+/*		donate stuff page yay 	*/
+
+#donate-bg1 {
+	background-image: url('images/bg5.jpg');
+	background-size: cover;
+	background-position: top;
+}
+
+#donate-inner1 {
+	max-width: 1000px;
+    height: 70%;
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 100%;
+}
+
+
+#donate-inner1 h1 {
+	font-family: Assistant;
+	font-weight: bold;
+	font-size: 62px;
+	width: 100%;
+	color: #0066d3;
+}
+
+#donate-inner1 hr {
+	margin-top: 0;
+	width: 100%;
+}
+
+#donate-box1 {
+	height: 300px;
+}
+
+#donate-box1 p {
+	font-size: 20px;
+	font-family: Assistant;
+	line-height: 1.6;
+	color: #414141;
+}
+
+#donate-box1 img {
+	width: 300px;
+	float: right;
+	margin-left: 50px;
+}
+
+#donate-box1 button {
+	width: 200px;
+	height: 60px;
+	font-family: Assistant;
+	background: #4cb5a6;
+	border: transparent;
+	float: right;
+	transition: background 1s, border 1s;
+	font-size: 23px;
+	color: #fafafa;
+}
+
+#donate-box1 button:hover{
+	background: #0066d3;
+	border: transparent;
+	cursor: pointer;
+	color: #fafafa;
+}
+
+
+#contact-bg1 {
+	height: 800px;
+}
+
+#contact-inner1 {
+	max-width: 1000px;
+    height: 85%;
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 100%;
+}
+
+form > * {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 20px !important;
+	font-family: Assistant !important;
+	font-size: 18px !important;
+}
+
+textarea {
+	height: 300px;
+}
+
+#contact-inner1 h1 {
+	font-family: Assistant;
+	font-weight: bold;
+	font-size: 72px;
+}
+
+#contact-inner1 p {
+	font-family: Assistant;
+	font-size: 21px;
+	text-align: center;
+}
+
+
+
+
+
+
+
+
+
+.mobile-block {
+	display: none;
+}
+
+#footer {
+	height: 250px;
+	background-color: #0f60b2;
+	text-align: center;
+	position: relative
+}
+
+#footer h4 {
+	font-family: Assistant;
+	font-weight: bold;
+	color: #fafafa;
+}
+
+#footer h3 {
+	margin: 0;
+}
+
+#footer ul li a {
+	font-family: Assistant;
+	color: #d3d3d3;
+}
+
+#footer ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+.badge-primary {
+	font-size: 17px !important;
+	font-family: Roboto Mono;
+	color: #393939 !important;
+	background-color: #dbdbdb !important;
+}
+
+#foot-row {
+	padding: 15px 0 5px 0;
+}
+
+.badge {
+	padding: 10px !important;
+}
+
+span a {
+	color: #0f9380 !important;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 1370px) {
+	#home-bg2 {
+		height: 900px !important;
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	#lhr, #rhr {
+		display: none;
+	}
+	#about-inner4 {
+		width: 65%;
+
+	}
+	#about-bg3 {
+		height: 1804px;
+	}
+
+}
+
+
+@media screen and (max-width: 1000px) {
+	#home-bg2 {
+		height: 1100px !important;
+	}
+}
+
+
+@media screen and (max-width: 992px) {
+	#about-bg2 {
+		height: 800px;
+	}
+	#social-container {
+		display: none;
+	}
+	.team-pic {
+		display: none;
+	}
+	#about-bg3 {
+		height: 1394px;
+	}
+}
+
+@media screen and (max-width: 868px) {
+	#contact-bg1 {
+		height: 880px !important;
+	}
+	#donate-box1 img {
+		width: 185px;
+	}
+	#donate-box1 button {
+		float: left;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	#about-bg2 {
+		height: 1050px;
+		text-align: center;
+	}
+	#about-bg3 {
+		height: 1204px;
+	}
+	#about-inner4 button {
+		width: 170px;
+	}
+	#about-inner2 img {
+		display: block;
+		margin: 0 auto 25px auto;
+		float: none;
+	}
+	#about-inner2 hr {
+		float: none;
+		margin: 0 auto;
+	}
+	#about-inner2 button {
+		margin-top: 15px;
+	}
+	#home-strip h2 {
+		font-size: 36px;
+		line-height: 1.3;
+	}
+	#home-strip {
+		height: 120px;
+	}
+	#home-bg1 {
+		height: 450px;
+		background-attachment: unset;
+	}
+	#home-bg3 {
+		height: 800px !important;
+	}
+	#home-bg2 {
+		height: 1300px !important;
+	}
+	#home-container1 h2 {
+		font-size: 37px !important;
+	}
+	#home-container1 span {
+		font-size: 24px !important;
+	}
+	#footer {
+		height: 275px;
+	}
+	#donate-inner1 {
+		height: 85%;
+	}
+	.navbar-collapse {
 	position: relative;
-	top: -120px;
+    top: 15px;
+    width: 100%;
+    left: 16px;
+	}
+	.navbar-nav {
+		float: right;
+	    padding: 15px;
+	    width: 200px;
+	    text-align: right;
+	    background-color: rgba(255,255,255,0.7);
+	}
+	#about-bg1 h1 {
+		font-size: 62px;
+	}
+	.mobile-block {
+		display: block;
+	}
+	.web-block {
+		display: none;
+	}
+	#team-row .row {
+		justify-content: center;
+		text-align: center;
+	}
+	#team-row .row h2 {
+		font-size: 26px;
+	}
+	#team-row p {
+		margin-bottom: 0;
+	}
+	#about-inner4 h1 {
+		font-size: 42px;
+	}
 }
+
+
+@media screen and (max-width: 576px) {
+	#lm-h-button {
+		font-size: 16px !important;
+		width: 320px;
+	}
+	#about-inner4 {
+		width: 92% !important;
+	}
+	#enchanted-text {
+		font-size: 17px !important;
+	}
+
+	#footer {
+		height: 580px;
+	}
+	#contact-inner1 h1 {
+		font-size: 52px;
+	}
+	#contact-inner1 p {
+		font-size: 18px;
+	}
+	#donate-bg1 {
+		height: 900px !important;
+	}
+	#donate-inner1 {
+		text-align: center;
+	}
+	#donate-box1 img {
+		float: unset;
+		margin: 20px auto;
+		display: block;
+	}
+	#donate-box1 button {
+		margin-top: 20px;
+		float: right;
+	}
+	#donate-box1 p {
+		font-size: 19px;
+	}
+	#donate-inner1 h1 {
+		font-size: 46px;
+	}
+	#donate-inner1 hr {
+		width: 80%;
+	}
+	.badge-primary {
+		font-size: 15px !important;
+	}
+	#about-bg2 {
+		height: 1150px;
+		justify-content: flex-start;
+	}
+	#about-inner2 {
+		padding-top: 0 !important;
+	}
+	#about-inner2 h1 {
+		font-size: 46px;
+	}
+	#about-inner2 hr {
+		margin: 10px auto 0 auto;
+	}
+	#about-bg1 {
+		height: 200px;
+	}
+	.dummy {
+		height: 150px;
+	}
+	#team-row .row {
+		justify-content: center;
+		text-align: center;
+	}
+	#about-inner4 {
+		width: 75%;
+	}
+}
+
+@media screen and (max-width: 460px) {
+	#home-inner2 {
+		width: 95% !important;
+		height: 90%;
+	}
+	#home-bg2 {
+		position: unset !important;
+	}
+	#home-bg3 {
+		height: 1050px !important;
+	}
+	.ws-text {
+		font-size: 28px !important;
+	}
+	#contact-inner1 {
+		padding: 10px !important;
+	}
+	#donate-bg1 {
+		height: 1000px !important;
+	}
+	.navbar-collapse {
+		top: 30px;
+	}
+	#about-inner2 img {
+		width: 230px;
+	}
+	#codeberry {
+		bottom: 100px;
+	}
+	#about-bg3 {
+		height: 1400px;
+	}
+	#about-bg2 {
+		height: 1250px;
+	}
+}
+
+@media screen and (max-width: 372px) {
+	textarea {
+		height: 240px;
+	}
+	.badge-primary {
+		font-size: 13px !important;
+	}
+	#about-bg3 {
+		height: 1585px;
+	}
+}
+
+@media screen and (max-width: 345px) {
+	#about-bg3 {
+		height: 1600px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

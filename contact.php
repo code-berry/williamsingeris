@@ -14,8 +14,8 @@
 	<script src="js/bootstrap.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=Assistant:400,800|Caveat+Brush|Neucha|PT+Serif|Roboto+Mono" rel="stylesheet">
 </head>
-
 <body>
+
 <nav class="navbar navbar-light navbar-expand-md sticky-top">
   <a class="ws-text" data-aos-once="true" data-aos="zoom-in-right" href="index.html">WilliamSingeris<span>.org</span></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -23,8 +23,8 @@
   </button>
   <div class="collapse navbar-collapse" id="navbarText">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">Home</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="about.html">About Us</a>
@@ -32,55 +32,26 @@
       <li class="nav-item">
         <a class="nav-link" href="donate.html">Donations</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="contact.php">Contact Us</a>
+      <li class="nav-item active">
+        <a class="nav-link" href="contact.php">Contact Us  <span class="sr-only">(current)</span></a>
       </li>
     </ul>
     <div id="social-container"><a href="https://www.facebook.com/williamsingeris"><img src="images/fb.png" alt="" id="fb-logo"></a><a href="http://instagram.com/enchanted2017ldn"><img src="images/insta.png" alt="" id="insta-logo"></a></div>
   </div>
 </nav>
 
-<div class="m-container-md fix-top" id="home-bg1">
-	<div id="home-strip" class="m-flex">
-		<hr id="lhr">
-		<h2 class="cure" data-in-effect="rollIn">Find the Cure.</h2>
-		<!-- learn more home button -->
-		<a href="donate.html"><button id="lm-h-button">Donate to Myotonic Dystrophy Research</button></a>
-		<hr id="rhr">
-	</div>
-</div>
-
-<div id="home-bg3" class="m-container-sm m-flex">
-	<div class="inner-lg m-flex half-top">
-		<div class="row" id="home-row">
-			<div class="m-flex col-md-4">
-				<h1>About Us</h1>
-				<hr>
-				<p>This movement was formed by a group of individuals either immediately affected by Congenital Myotonic Dystrophy, or interested in volunteering their time to help find the cure. <a href="team.html">Meet the team here.</a></p>
-			</div>
-			<div class="m-flex col-md-4">
-				<h1>Events</h1>
-				<hr>
-				<p>Since 2004, the Singeris family and friends have hosted black-tie gala nights to establish and fund the William Singeris National Center for Myotonic Dystrophy. We are always graciously accepted donations <a href="donate.html">here.</a></p>
-			</div>
-			<div class="m-flex col-md-4">
-				<h1>Sponsors</h1>
-				<hr>
-				<p>Every donation makes a difference, and we are tremendously grateful for every cent we have recieved. Your financial donation will help fundraise to continue and advance research on Myotonic Dystrophy.</p>
-			</div>
+<div class="m-container-md m-flex" id="contact-bg1">
+	<div class="pad-md m-flex" id="contact-inner1" data-aos="zoom-in">
+		<h1>Contact Us</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi similique consequuntur adipisci ipsa corrupti, laborum reiciendis magnam, veritatis a temporibus maxime nihil voluptatibus obcaecati unde architecto nobis! Voluptatem, et, voluptatum.</p>
+		<div id="contact-container">
+			<form action="contactform.php" method="post">
+				<input required type="text" name="name" placeholder="Your name">
+				<input required type="email" name="email" placeholder="Your email">
+				<textarea name="body" placeholder="What's on your mind?"></textarea>
+				<button type="submit" name="submit">Submit</button>
+			</form>
 		</div>
-	</div>
-</div>
-
-
-<div class="fix-top m-container-md m-flex" id="home-bg2" data-aos="fade-up">
-	<div class="inner-md pad-md loose-flex" id="home-inner2">
-		<div id="home-container1">
-			<h2>Thank you, </h2><span>for helping to create a healthier world for children and their families.</span>
-		</div>
-		<hr>
-		<p id="enchanted-text">An Enchanted Evening held on Saturday, May 13th in support of Myotonic Dystrophy Research was an outstanding success! Support like yours is the reason $75,524 (net) was raised. I wanted to extend a heart-felt thank you for your commitment in making this event such a tremendous success. In February 2005, the William Singeris National Centre for Myotonic Dystrophy was opened in London as part of Children’s Health Research Institute, a division of Lawson Research. Since its inception, the Singeris Family has raised over $325,000 to fund this ground-breaking initiative.</p>
-		<a href="about.html"><button class="btn btn-light">Read More</button></a>
 	</div>
 </div>
 
@@ -146,12 +117,12 @@
 	</div>
 	<a href="https://www.codeberry.ca/"><img src="images/codeberry.png" alt="" id="codeberry"></a>
 </div>
-
 <script src="assets/textillate/jquery.lettering.js"></script>
 <script src="assets/textillate/jquery.textillate.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script src="js/main.js"></script>
+<script>
+	AOS.init();
+</script>
 <script src="js/footer.js"></script>
-
 </body>
 </html>
