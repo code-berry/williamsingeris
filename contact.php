@@ -58,7 +58,7 @@
 <div id="footer" class="m-flex">
 	<div class="container">
 		<div class="row" id="foot-row">
-			<div class="col-sm-4 web-block" data-aos="fade-right" id="footer-col">
+			<div class="col-sm-4 web-block" id="footer-col">
 				<h4>Navigation</h4>
 				<ul>
 					<li><a href="index.html">Home</a></li>
@@ -67,7 +67,7 @@
 					<li><a href="contact.php">Contact Us</a></li>
 				</ul>
 			</div>
-			<div class="col-sm-4 web-block" data-aos="fade-up" id="footer-col">
+			<div class="col-sm-4 web-block" id="footer-col">
 				<h4>Information</h4>
 				<ul>
 					<li><a href="https://rarediseases.info.nih.gov/diseases/10419/myotonic-dystrophy">Myotonic Dystrophy</a></li>
@@ -76,7 +76,7 @@
 					<li><a href="https://www.myotonic.org/">Myotonic.org</a></li>
 				</ul>
 			</div>
-			<div class="col-sm-4  web-block" data-aos="fade-left" id="footer-col">
+			<div class="col-sm-4  web-block" id="footer-col">
 				<h4>Quick Links</h4>
 				<ul>
 					<li><a href="team.html">Our Team</a></li>
